@@ -1,0 +1,24 @@
+O que são Lambdas em Java?
+
+
+Em Java, uma expressão lambda (ou simplesmente lambda) é uma forma concisa de representar uma função anônima.
+
+Essencialmente, é um bloco de código que pode ser passado como um argumento para um método, ou armazenado em uma variável, de forma similar a um objeto.
+
+Introduzidas no Java 8, as lambdas foram uma das maiores mudanças na linguagem, simplificando o código e permitindo o uso da programação funcional.
+
+Antes do Java 8, para usar uma função como argumento, você precisava criar uma classe anônima, o que gerava muito código "boilerplate" (código repetitivo).
+
+Sintaxe Básica
+
+A sintaxe de uma lambda é composta por três partes:
+
+Lista de Parâmetros: Os parâmetros de entrada da função. Podem ser vazios, um único parâmetro (sem parênteses) ou múltiplos (separados por vírgulas e entre parênteses).
+
+Seta (Arrow Token): O token -> separa a lista de parâmetros do corpo da expressão.
+
+Corpo da Expressão: O código que será executado. Pode ser uma única expressão (sem chaves) ou um bloco de código com múltiplas linhas (entre chaves {}).
+
+// Recebe um nome e retorna uma saudação
+
+(nome) -> "Olá, " + nome
