@@ -1,0 +1,39 @@
+/*Interfaces Funcionais
+Lambdas estão intrinsecamente ligadas às Interfaces Funcionais. Uma interface funcional é uma interface que contém exatamente um método abstrato. A anotação @FunctionalInterface é opcional, mas é uma boa prática para indicar que a interface foi projetada para ser usada com lambdas.
+
+Exemplos de interfaces funcionais nativas do Java:
+
+Consumer<T>: Representa uma operação que aceita um único argumento e não retorna resultado. Seu método abstrato é accept(T t).
+
+Java
+
+Consumer<String> impressora = (s) -> System.out.println(s);
+impressora.accept("Oi, mundo!");
+Predicate<T>: Representa um predicado (um teste que retorna um valor booleano). Seu método abstrato é test(T t).
+
+Java
+
+Predicate<Integer> isPar = (n) -> n % 2 == 0;
+boolean resultado = isPar.test(4); // true
+Function<T, R>: Representa uma função que aceita um argumento de tipo T e retorna um resultado de tipo R. Seu método abstrato é apply(T t).
+
+Java
+
+Function<Integer, String> intParaString = (i) -> "Número: " + i;
+String texto = intParaString.apply(100); // "Número: 100"
+Supplier<T>: Representa um fornecedor de resultados. Não aceita argumentos. Seu método abstrato é get().
+
+Java
+
+Supplier<Double> randomNum = () -> Math.random();
+Double numero = randomNum.get();
+Vantagens de Usar Lambdas
+Código mais limpo e conciso: Reduz significativamente a quantidade de código necessária para implementar uma função.
+
+Melhor legibilidade: Torna a intenção do código mais clara e direta.
+
+Facilita o uso de Streams API: As lambdas são a base da Streams API do Java, que permite processar coleções de forma declarativa e eficiente.
+
+Suporte à Programação Funcional: Abre as portas para paradigmas de programação mais modernos, como o "passar funções como argumento".
+
+Em resumo, lambdas são uma ferramenta poderosa que modernizou o Java, tornando-o mais expressivo e funcional. Se você for trabalhar com Java 8 ou versões mais recentes, entender lambdas é fundamental para escrever código eficiente e de alta qualidade.*/
